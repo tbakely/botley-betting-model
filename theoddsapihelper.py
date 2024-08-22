@@ -5,34 +5,10 @@ import requests
 class TheOddsAPIHelper:
     __API_KEY = "fc35e20b0a8d983f77fc2fa9257a35c7"
     __SPORTS_URL = f"https://api.the-odds-api.com/v4/sports?apiKey={__API_KEY}"
-    __ODDS_URL = "https://api.the-odds-api.com/v4/sports/{key}/odds/?apiKey={api_key}&regions=us&markets=h2h,spreads&oddsFormat=american"
-    __SPORTS_TO_TRY = [
-        "American Football", 
-        "Baseball", 
-        "Basketball", 
-        "Boxing", "Golf", 
-        "Ice Hockey", 
-        "Soccer", 
-        "Mixed Martial Arts", 
-        "UFC"
-    ]
+    __ODDS_URL = "https://api.the-odds-api.com/v4/sports/{key}/odds/?apiKey={api_key}&regions=us&markets=h2h,spreads,totals&oddsFormat=american"
+    __SPORTS_TO_TRY = []
     __KEYS_TO_TRY = [
-        "americanfootball_ncaaf",
-        "baseball_mlb_preseason",
-        "baseball_mlb_world_series_winner",
-        "baseball_ncaa",
-        "basketball_nba",
-        "basketball_nba_championship_winner",
-        "basketball_ncaab",
-        "basketball_ncaab_championship_winner",
-        "boxing_boxing",
-        "mma_mixed_martial_arts",
-        "golf_masters_tournament_winner",
-        "golf_pga_championship_winner",
-        "golf_the_open_championship_winner",
-        "golf_us_open_winner",
-        "icehockey_nhl",
-        "icehockey_nhl_championship_winner",
+        "americanfootball_nfl"
     ]
 
     @staticmethod
